@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-image: url(); /* Cambia la URL a la imagen deseada */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form input,
+.form select,
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form button {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.form button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Resto del CSS permanece igual */
+
+#exitoMensaje {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #28a745;
+    opacity: 0; /* Opacidad inicial en 0 */
+    transition: opacity 1s ease-in-out; /* Transición de opacidad */
+}
+
+.fadeIn {
+    opacity: 1; /* La clase fadeIn cambiará la opacidad a 1 */
+}

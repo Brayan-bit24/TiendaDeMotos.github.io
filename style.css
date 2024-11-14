@@ -1,0 +1,83 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.moto {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 280px;
+    max-width: 300px; 
+    box-sizing: border-box; /* Aplicar el Box Model */
+    transition: transform 0.4s, box-shadow 0.4s; /* Transición para la animación del cuadro*/
+}
+
+.moto:hover {
+    transform: scale(1.05); /* Escala al pasar el ratón */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    margin-left: 70px;
+}
+
+.btn:hover {
+    background: white;
+    color: #e74c3c;
+    transform: translateY(-2px); /* Efecto */
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Selectores avanzados */
+.moto h2:first-of-type {
+    color: #e74c3c; /* Color para el primer título de cada moto */
+}
+
+.container > .moto:nth-child(even) {
+    background: #e9ecef; /* Color diferente para las motos en posiciones pares */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
